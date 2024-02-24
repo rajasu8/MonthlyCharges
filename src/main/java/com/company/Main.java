@@ -18,7 +18,7 @@ public class Main {
         String filename = "1689676107570-transaction-logs.csv";
         if((month > 0 && month < 13) && (year > 2000 && year < 2999)){
             ReadExcelFileDemo calculateMonthlyCharges = new ReadExcelFileDemo(month,year,filename);
-            System.out.println(calculateMonthlyCharges.calculatingMonthlyCharges());
+            System.out.println("Monthly Charges for the month of "+month+" and year"+ year+ "is " +calculateMonthlyCharges.calculatingMonthlyCharges());
         }else{
             System.out.println("Given month/year is not valid");
         }
